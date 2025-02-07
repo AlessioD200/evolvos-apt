@@ -1,0 +1,6 @@
+Package: evolvs-gnome-settings
+Version: 1.0
+Architecture: all
+Maintainer: Alessio <alessio.depreytere@icloud.com>
+Depends: dconf-cli
+Description: Custom GNOME shell and extensions settings for EvolvOS

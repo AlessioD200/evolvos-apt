@@ -1,0 +1,30 @@
+[/]
+disable-user-extensions=false
+disabled-extensions=@as []
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ControlBlurEffectOnLockScreen@pratap.fastmail.fm', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'compiz-windows-effect@hermes83.github.com', 'dash2dock-lite@icedman.github.com', 'blur-my-shell@aunetx', 'openbar@neuromorph']
+welcome-dialog-last-shown-version='47.0'
+
+[extensions/blur-my-shell]
+settings-version=2
+
+[extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[world-clocks]
+locations=@av []

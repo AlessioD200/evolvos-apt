@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check for dbus-launch, and if not available, start it
+if ! which dbus-launch > /dev/null; then
+    echo "dbus-launch not found. Exiting."
+    exit 1
+fi
+
+# Start the dbus session if not already running
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval $(dbus-launch --sh-syntax --exit-with-session)
+fi
+
+# Apply the GNOME shell and extensions settings
+dconf load /org/gnome/shell/ < /etc/skel/gnome-shell-settings.dconf
+dconf load /org/gnome/desktop/ < /etc/skel/gnome-extensions.dconf
+
