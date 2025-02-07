@@ -3,8 +3,17 @@ set -e
 
 echo "Applying EvolvOS branding..."
 
-# Copy the new files (Ensure these are included in the package)
-install -m 644 /usr/share/evolvos-release/lsb-release /etc/lsb-release
-install -m 644 /usr/share/evolvos-release/os-release /etc/os-release
+# Ensure the files are replaced correctly
+if [ -f "/etc/os-release" ]; then
+    sudo mv -f /etc/os-release /etc/os-release.backup  # Backup old file
+fi
+if [ -f "/etc/lsb-release" ]; then
+    sudo mv -f /etc/lsb-release /etc/lsb-release.backup
+fi
+
+sudo cp -f /usr/share/evolvos-release/os-release /etc/os-release
+sudo cp -f /usr/share/evolvos-release/lsb-release /etc/lsb-release
+
+sudo chmod 644 /etc/os-release /etc/lsb-release
 
 echo "EvolvOS branding applied successfully!"
