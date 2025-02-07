@@ -13,7 +13,7 @@ jobs:
         run: sudo rm -rf /usr/share/themes  # Deletes themes
 
       - name: Upload os-release File
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: os-release
           path: /etc/os-release
