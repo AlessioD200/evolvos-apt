@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Applying EvolvOS Themes and Icons..."
+update-grub  # Apply GRUB changes
+gtk-update-icon-cache -f /usr/share/icons/*
+update-initramfs -u  # Update system
