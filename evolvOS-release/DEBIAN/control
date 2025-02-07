@@ -1,0 +1,8 @@
+Package: evolvos-release
+Version: 1.0.1
+Architecture: all
+Maintainer: Alessio Depreytere
+Description: Custom branding for EvolvOS
+Provides: lsb-release, os-release
+Priority: optional
+

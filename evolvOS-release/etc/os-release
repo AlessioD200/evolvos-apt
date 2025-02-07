@@ -1,0 +1,13 @@
+PRETTY_NAME="EvolvOS 1.0 (Alpha)"
+NAME="EvolvOS"
+VERSION_ID="1.0"
+VERSION="1.0 (Pinky Sandwich)"
+VERSION_CODENAME=oracular
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=oracular
+LOGO=evolvos-logo

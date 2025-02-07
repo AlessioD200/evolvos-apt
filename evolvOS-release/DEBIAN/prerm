@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+echo "Removing EvolvOS branding..."
+
+# Restore original files if they exist
+if [ -f /etc/lsb-release.orig ]; then
+    mv /etc/lsb-release.orig /etc/lsb-release
+    dpkg-divert --remove --rename /etc/lsb-release
+fi
+
+if [ -f /etc/os-release.orig ]; then
+    mv /etc/os-release.orig /etc/os-release
+    dpkg-divert --remove --rename /etc/os-release
+fi
+
+echo "EvolvOS branding removed."
+

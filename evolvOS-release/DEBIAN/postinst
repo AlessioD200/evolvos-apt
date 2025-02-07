@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+echo "Applying EvolvOS branding..."
+
+# Copy the new files (Ensure these are included in the package)
+install -m 644 /usr/share/evolvos-release/lsb-release /etc/lsb-release
+install -m 644 /usr/share/evolvos-release/os-release /etc/os-release
+
+echo "EvolvOS branding applied successfully!"
