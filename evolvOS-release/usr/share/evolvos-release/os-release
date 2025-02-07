@@ -1,9 +1,9 @@
 NAME="EvolvOS"
-PRETTY_NAME="EvolvOS 1.0 (Alpha)"
-VERSION="1.0 (Pinky Sandwich)"
+PRETTY_NAME="EvolvOS 1.0.1 (Alpha)"
+VERSION="1.0.1 (Pinky Sandwich)"
 ID=evolvos
 ID_LIKE=debian
-VERSION_ID="1.0"
+VERSION_ID="1.0.1"
 VERSION_CODENAME=oracular
 HOME_URL="https://evolvos.com/"
 SUPPORT_URL="https://evolvos.com/support"
